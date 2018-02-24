@@ -1,3 +1,3 @@
 # projet
 
-Auteur : Rémy GUillaumot
+Auteur : Rémy Guillaumot
