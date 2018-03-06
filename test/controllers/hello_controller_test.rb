@@ -1,4 +1,9 @@
-+require 'test_helper'
-+
-+class HelloControllerTest < ActionController::TestCase
-+end
+require 'test_helper'
+
+class HelloControllerTest < ActionController::TestCase
+  test "should get index" do
+    get :index
+    assert_response :success
+  end
+
+end

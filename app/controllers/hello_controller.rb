@@ -1,2 +1,4 @@
-+class HelloController < ApplicationController
-+end
+class HelloController < ApplicationController
+  def index
+  end
+end

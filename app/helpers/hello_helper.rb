@@ -1,2 +1,2 @@
-+module HelloHelper
-+end
+module HelloHelper
+end
