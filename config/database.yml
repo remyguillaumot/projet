@@ -6,25 +6,21 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
-  pool: 5
-  host: localhost
-  username: azerty
-  password: azerty
+  host: ec2-23-23-177-166.compute-1.amazonaws.com
+  database: d96j86iv2p0h4v
+  user: mscacxjslphvzy
+  password: 704941b85f130c3c092ca44a326ae34b4caf84ade7c25da3c89a243e6249967c
+  port: 5432
 
 
 development:
   <<: *default
-  database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
 
 production:
   <<: *default
-  adapter: postgresql
-  database: db/production.sqlite3
