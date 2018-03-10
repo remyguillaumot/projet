@@ -1,3 +1,10 @@
 language: ruby
 rvm:
 - 2.3.5
+deploy:
+  provider: heroku
+  api_key:
+    secure: Z0pTUYLxbRRoxZkG9XyUIhnW5qteVELcxYZm+5Pf1Tnp1V20yGnuK5aHE6EulxxGMz5GXGbgOsv3DiFRnLGZA4FG8psH8xIpgaOq5OTmlTyjYLfqpGfg0T/Efo7hDj1maTH6yy+7AgtJ3rZUGbqkj03il9AOJlqocxSKmjBSUC0LpFVvrVfTbTQvRY2lWCJHRFl4jUbFI3IhrnvB4pOLslj48VVF7iBB4SFO/jjlyo41aA1GuQtWuDQUIP5DxdfD3oIuWzn4Vu8GkQNossf13UoRZry9i+4Fp2IstoOp2q17pUXqbPPYO2arap7hzbcia4iOL6S3UGvbl4IGKA0IfKTG7nBNYTi3S8rZocrNNusyO694DVJeDAhYYR8IJcpVXmHptFwu2QFEl3MqEjTlwrKBf7yPBenK+aJoIoQgnZEv6mgf4LEZW7Egzqox1UM15HE5LPKKeJ7HR5sDv1V77YeNFJgqx2l+59AldHAyMovrb+nQlv/LXK6llqL9wLlI/ODXbZiHiB5WedwVbEKRdvaHXLIq1++yRhxQpdnUHOjKsJ1W/9r1Xn0YqQ/Ci6qkKUdlvWNxIw6PL2zLWH/w9AXIZGj9UrRdfKIuuXPIUvBgYfw7wIVchSDCtoooh1pitFouCXIyh35VDqVw+VW74SKNnj652LnY58DU81HBCwk=
+  app: guarded-reaches-12454
+  on:
+    repo: remyguillaumot/projet
