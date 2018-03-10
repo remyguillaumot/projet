@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgresql
+  adapter: sqlite3
   host: ec2-23-23-177-166.compute-1.amazonaws.com
   database: d96j86iv2p0h4v
   user: mscacxjslphvzy
