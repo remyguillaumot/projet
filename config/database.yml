@@ -6,11 +6,8 @@
 #
 default: &default
   adapter: sqlite3
-  host: ec2-23-23-177-166.compute-1.amazonaws.com
-  database: d96j86iv2p0h4v
-  user: mscacxjslphvzy
-  password: 704941b85f130c3c092ca44a326ae34b4caf84ade7c25da3c89a243e6249967c
-  port: 5432
+  pool : 5
+  timeout: 500
 
 
 development:
