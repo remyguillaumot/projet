@@ -9,6 +9,9 @@ gem 'pg', '~> 0.18', group: :production
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 
+#Nominatim
+gem 'nominatim', '~> 0.0.6'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
