@@ -12,6 +12,9 @@ gem 'sqlite3', group: [:development, :test]
 #Nominatim
 gem 'nominatim', '~> 0.0.6'
 
+#Forecast_io
+gem 'forecast_io'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

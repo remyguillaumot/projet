@@ -20,5 +20,20 @@
   <%= @town.longitude %>
 </p>
 
+<p>
+  <strong>Temperature:</strong>
+  <%= @town.get_weather.temperature %> °C
+</p>
+
+<p>
+  <strong>Humidity:</strong>
+  <%= @town.get_weather.humidity * 100 %> %
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @town.get_weather.summary %>
+</p>
+
 <%= link_to 'Edit', edit_town_path(@town) %> |
 <%= link_to 'Back', towns_path %>
