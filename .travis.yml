@@ -9,6 +9,7 @@ deploy:
   run : "rake db:migrate"
   on:
     repo: remyguillaumot/projet
+    
   env:
      global:
        - CC_TEST_REPORTER_ID=8ab67329a1152aa8d6304fe83ec2e7f93833b815632956adfb3aacc06475084b
@@ -17,8 +18,6 @@ deploy:
      - chmod +x ./cc-test-reporter
      - ./cc-test-reporter before-build
    script:
-     - bundle exec rake $TASKS
+     - bundle exec rake
    after_script:
-     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-  matrix:
-    - COVERAGE=TRUE
+     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT -t simplecov
