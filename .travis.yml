@@ -9,3 +9,16 @@ deploy:
   run : "rake db:migrate"
   on:
     repo: remyguillaumot/projet
+  env:
+     global:
+       - CC_TEST_REPORTER_ID=8ab67329a1152aa8d6304fe83ec2e7f93833b815632956adfb3aacc06475084b
+   before_script:
+     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+     - chmod +x ./cc-test-reporter
+     - ./cc-test-reporter before-build
+   script:
+     - bundle exec rake $TASKS
+   after_script:
+     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  matrix:
+    - COVERAGE=TRUE
